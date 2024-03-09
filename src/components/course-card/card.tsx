@@ -49,7 +49,10 @@ export const CourseCard: FC<CourseCardProps> = ({
   };
 
   return (
-    <div className='rounded-md border-2 border-neutral-80 px-6 py-8 hover:border-primary-20 focus:border-accent-50'>
+    <div
+      className='rounded-md border-2 border-neutral-80 px-6 py-8 hover:border-primary-20 focus:border-accent-50'
+      onClick={() => onSelect(id)}
+    >
       <div className='flex items-center'>
         <RadioButton onClick={() => onSelect(id)} checked={selected} />
         <p className='ml-2 text-heading-sm font-bold text-primary-30'>
